@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir kontak mahasiswa">
+    <title>Formulir Kontak</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1>Formulir Kontak</h1>
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="kontak.html" class="active">Hubungi Saya</a></li>
+                    <li><a href="resume.html">Resume Saya</a></li>
+                    <li><a href="project.html">Project Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-section">
+            <h2>Kirimkan pesan atau penawaran proyek</h2>
+            <form action="#" method="post">
+                <div class="field">
+                    <label for="nama_pengirim">Nama lengkap anda</label>
+                    <input type="text" id="nama_pengirim" name="nama_pengirim" placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="field">
+                    <label for="email_pengirim">Alamat email</label>
+                    <input type="email" id="email_pengirim" name="email_pengirim" placeholder="contoh@email.com">
+                </div>
+
+                <div class="field">
+                    <label for="jenis_layanan">Layanan yang dibutuhkan</label>
+                    <select id="jenis_layanan" name="jenis_layanan">
+                        <option value="">Pilih layanan</option>
+                        <option value="web">Pembuatan web</option>
+                        <option value="app">Pengembangan aplikasi</option>
+                        <option value="other">Lain-lain</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+
+                <div class="field">
+                    <button type="submit">Kirim Pesan</button>
+                    <button type="reset">Batal / Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Teknik Informatika ITG</p>
+        </div>
+    </footer>
+</body>
+</html>
